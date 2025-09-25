@@ -18,7 +18,14 @@ const router=createBrowserRouter([
   {
     element:<App/>,
     children:[
+     
       {
+        path:'/dashboard',
+        element:<Dashboard/>
+      }
+    ]
+  },
+   {
         path:'/',
         element:<Home/>
       },
@@ -26,12 +33,6 @@ const router=createBrowserRouter([
         path: '/home',  // http://localhost:5173/home
         element: <Home />
       },
-      {
-        path:'/dashboard',
-        element:<Dashboard/>
-      }
-    ]
-  },
   {
     path:'/auth/sign-in',
     element:<SignInPage/>
